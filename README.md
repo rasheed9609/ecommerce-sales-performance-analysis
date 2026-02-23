@@ -53,7 +53,7 @@ The business wants to:
 
 ## Dashboard preview
 ### Sales Overview Dashboard
-![Sales Overview]
+![Sales Overview](screenshorts/page1.png)
 
 ---
 
