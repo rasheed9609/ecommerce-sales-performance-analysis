@@ -1,17 +1,16 @@
 # ecommerce-sales-performance-analysis
 ## Project Overview
-This Project analyzes e-commerce sales data to identify revenue trends, regional performance, cancellation patterns, and overall business growth insights.
-The objective is to transform raw transactional data into meaningful business intelligence using Excel for data cleaning, SQL for analytical queries, and power Bi for interactive dashboard visualization.
+This project evaluates e-commerce sales performance by analyzing revenue, order volume, cancellation trends, product category contribution, and logistics efficiency. The goal is to identify operational inefficiencies and provide actionable insights to improve revenue stability and profitability.
 
 ---
 
 ## Business Problem
 The business wants to:
 
-- Understand revenue distribution  across state and cities.
-- Identify top-performing and underperforming region.
-- Analyze cancellation trends.
-- Improve sales strategy using data-driven insighhts.
+- Monitor overall revenue and order performance.
+- Identify high cancellation rate and reduce revenue loss.
+- Detect delivered orders with zero revenue
+- Analyze monthly revenue fluctuation
 
 - ---
 
@@ -26,11 +25,11 @@ The business wants to:
 
 ## Key Insights
 
-- Top 5 states coontribute the majority of total revenue.
-- Certain region show high cancellation rates.
-- Revenue is concentrted in specific high-performing cities.
-- Sessonal trends impact monthly sales performance.
-- A small percentage of customers generate a large portion of revenue.
+- The business generated 18.65M revenue from 120K total orders.
+- The cancellation rate stands at 14% indicating significant operational inefficiency and potential customer dissatisfaction. 
+- 724 delivered orders generated zero revenue,highlighting possible refund leakage or pricing inconsistencies.
+- Revenue is highly concentrated in two categories (Set and Kurta), indicating dependency risk.
+- over 60% of orders are marked "In Transit", indicating potential delivery delay and future cancellation risk.
 
 ---
 
@@ -41,13 +40,17 @@ The business wants to:
 - Handled missing values
 - Fixed formatting incosistencies
 - Validated revenue and quantity fields
+- Created calculated columns to improve analytical insights
 
 ---
 ### Data Analysis (SQL)
 
 - Aggregated revenue by state and city
 - Calculated cancellation rate
+- Monthly revenue aggregation
+- Cancelled vs Delivered orders count
 - Identified top-performing products and regions
+- Ensure data accuracy before dashboard development
 
 ---
 
@@ -59,10 +62,11 @@ The business wants to:
 
 ### Business Recomendations
 
-- Focus marketing efforts on high-revenue regions.
-- Investigate and reduce high cancellation.
-- Strengthan inventory planning for seasonal peak.
-- Develop retention strategies for top customer segments.
+- Improve inventory accuracy to avoid stock related cancellations
+- Audit refund and return processes
+- Implement validation check in billing system
+- Monitor "In Transit" delay
+- Run campaigns during low-performing months
 
 ---
 
